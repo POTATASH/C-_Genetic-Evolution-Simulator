@@ -39,3 +39,23 @@ Simplified Physics
 
 Standard Linear Algebra
 ->The Matrix.h file provides a custom template for matrix operations. While functional, it does not use specialized SIMD (Single Instruction, Multiple Data) instructions or highly optimized libraries like Eigen or BLAS which are standard in industry-grade "high-performance" machine learning.
+
+
+
+To build on linux->
+go to project root and then 
+
+cmake -B build -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build
+
+./build/bin/genetic_sim
+
+To build on windows->
+go to project directory then
+
+cmake -B build
+
+cmake --build build --config Release
+
+.\build\bin\Release\genetic_sim.exe
